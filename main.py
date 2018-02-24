@@ -1,35 +1,3 @@
-"""
-    Simple Music Classifier: machine learning on music with TensorFlow.
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-    ############################################################################
-
-    STRUCTURE:
-    Following a 'notebook' approach, this file holds the complete pipeline in a
-    sequence:
-    1. LOAD DATA: get the .wav files as float arrays
-    2. SPLIT DATA: functionality to split data in train/test/cv disjoint subsets
-    3. FEED DATA: functionality to sample from the subsets to feed the model
-    4. ERROR METRICS: functionality for measuring the output of the model
-    5. DEFINE TF MODELS: models are actually defined in the models.py file
-    6. DEFINE TF GRAPH: a TF superv. class. setup using a model and some config
-    7. TRAINING TF SESSION: train and save a model, show results on TensorBoard
-    8. RELOADING TF SESSION: reload a pre-trained model and efficiently run it
-    9. RUN ALL: load data, train+eval+save+reload model, show in TensorBoard
-"""
-
 from __future__ import print_function, division
 import torch
 import torch.optim as optim
